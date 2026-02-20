@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="/Style/Style.css">
+
+</head>
+
+<body>
+    <canvas id="particles-canvas"></canvas>
+
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">Dev<span class="accent">.</span>Ryan</a>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Início</a></li>
+                    <li><a href="#about" class="nav-link">Sobre</a></li>
+                    <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                    <li><a href="#projects" class="nav-link">Projetos</a></li>
+                    <li><a href="#experience" class="nav-link">Jornada</a></li>
+                    <li><a href="#contact" class="nav-link btn-primary">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!--Primeira Seção -->
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <div class="hero-image-wrapper">
+                    <div class="hero-img-placeholder">
+                        <img src="/asstes/MyPhoto.jpeg" alt="Ryan roger" class="hero-img">
+                    </div>
+                </div>
+
+                <div class="hero-content">
+                    <span class="greeting">Óla, eu sou</span>
+                    <h1 class="hero-title">Ryan <span class="text-gradiente">Rodrigues</span></h1>
+                    <h2 class="hero-subtitle">Eu construo <span class="typing-text"></span></h2>
+                    <p class="hero-description">Transformando ideias complexas em experiências digitais elegantes,
+                        performáticas
+                        e escaláveis.
+                        Especialista em resolver problemas reais com código limpo e design moderno.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="#projtect" class="btn btn-primary">Ver projetos
+                            <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-outline">Vamos conversar?</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+
+                        <a href="#" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+
+                        <a href="#" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+
+                    </div>
+                </div>
+                <!-- Animação mouse -->
+            </div>
+            <a href="#" class="scroll-down">
+                <span class="scroll-text">Descubra mais</span>
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </a>
+        </section>
+
+        <!-- Section Sobre Mim -->
+
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Sobre <span class="text-gradiente">Mim</span></h2>
+                    <p class="section-subtitle">Conheça um pouco da minha trajetoria</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text glass-card">
+                        <p>Sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> e desenvolvedor em
+                            formação,
+                            com foco em criar soluções tecnológicas funcionais, bem estruturadas e alinhadas às
+                            necessidades reais
+                            das pessoas e dos negócios.</p>
+
+                        <p> Ao longo da minha formação, venho construindo uma base sólida em <strong>desenvolvimento
+                                web</strong>,
+                            atuando tanto no frontend quanto no backend, sempre buscando escrever um código limpo,
+                            organizado
+                            e de fácil manutenção.</p>
+
+                        <p>
+                            Minha abordagem combina <strong>pensamento lógico, organização e atenção à experiência do
+                                usuário</strong>.
+                            Acredito que boas aplicações não se destacam apenas por funcionar, mas por serem bem
+                            pensadas,
+                            escaláveis e agradáveis de usar.
+                        </p>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-label">Anos de experiência</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">20+</span>
+                                <span class="stat-label">projetos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">14+</span>
+                                <span class="stat-label">Clientes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills da Section -->
+        <section id="skills" class="section skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Minhas <span class="text-gradiente">Habilidades</span></h2>
+                    <p class="section-subtitle">Tecnologias que domino e ferramentas que utilizo</p>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-category glass-card">
+                        <h3><i class="fa-solid fa-code"></i>Front-End</h3>
+                        <div class="skill-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                            <span>Python</span>
+                            <span>Java</span>
+                        </div>
+                    </div>
+                    <div class="skill-category glass-card">
+                        <h3><i class="fa-solid fa-server"></i>Back-End</h3>
+                        <div class="skill-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                            <span>Python</span>
+                            <span>Java</span>
+                        </div>
+                    </div>
+                    <div class="skill-category glass-card">
+                        <h3><i class="fa-solid fa-screwdriver-wrench"></i>Ferramentas</h3>
+                        <div class="skill-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                            <span>Python</span>
+                            <span>Java</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projetos -->
+
+        <section id="projects" class="section projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Projetos <span class="text-gradiente">Destaque</span></h2>
+                    <p class="section-subtitle">Alguns dos meus projetos mais recentes</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Primeiro Projeto 1-->
+                    <article class="project-card glass-card">
+                        <div class="project-image">
+                            <!-- parte visual -->
+                            <div class="placeholder-img gradiente-1"></div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                            </div>
+                            <h3 class="project-title">Projeto 1</h3>
+                            <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quisquam, quod.</p>
+                            <div class="project-links">
+                                <a href="#" class="btn-sm"><i class="fa-brands fa-github"></i>Codigo</a>
+                                <a href="#" class="btn-sm btn-accent"><i
+                                        class="fa-solid fa-external-link-alt"></i>Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Segundo Projeto 2-->
+                    <article class="project-card glass-card">
+                        <div class="project-image">
+                            <!-- parte visual -->
+                            <div class="placeholder-img gradiente-2"></div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                            </div>
+                            <h3 class="project-title">Projeto 1</h3>
+                            <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quisquam, quod.</p>
+                            <div class="project-links">
+                                <a href="#" class="btn-sm"><i class="fa-brands fa-github"></i>Codigo</a>
+                                <a href="#" class="btn-sm btn-accent"><i
+                                        class="fa-solid fa-external-link-alt"></i>Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Terceiro Projeto 3-->
+                    <article class="project-card glass-card">
+                        <div class="project-image">
+                            <!-- parte visual -->
+                            <div class="placeholder-img gradiente-3"></div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                            </div>
+                            <h3 class="project-title">Projeto 1</h3>
+                            <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quisquam, quod.</p>
+                            <div class="project-links">
+                                <a href="#" class="btn-sm"><i class="fa-brands fa-github"></i>Codigo</a>
+                                <a href="#" class="btn-sm btn-accent"><i
+                                        class="fa-solid fa-external-link-alt"></i>Demo</a>
+                            </div>
+                        </div>
+                    </article>
+        </section>
+
+        <!-- Experiencias -->
+        <section id="experience" class="section experience">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Minha <span class="text-gradiente">Jornada</span></h2>
+                    <p class="section-subtitle">Experiência profissional e educação</p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2023 - Presente</div>
+                        <div class="timeline-content glass-card">
+                            <h3>Análise e Desenvolvimento de Sistemas (ADS)</h3>
+                            <h4>UNISUAM.</h4>
+                            Graduação com foco em desenvolvimento de software, lógica de programação,
+                            desenvolvimento web, banco de dados e boas práticas de engenharia de software.
+                            Atualmente no penúltimo período.
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2025</div>
+                        <div class="timeline-content glass-card">
+                            <h3>Formação Complementar em Desenvolvimento </h3>
+                            <h4>Udemy e plataformas de ensino online</h4>
+                            <p>
+                                Cursos focados em <strong>HTML, CSS, JavaScript, Node.js, React, Angular, Vue.js,
+                                    PHP e MySQL</strong>, com desenvolvimento de projetos práticos e aplicações
+                                completas,
+                                reforçando fundamentos de frontend e backend.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2024 - Presente</div>
+                        <div class="timeline-content glass-card">
+                            <h3>Desenvolvedor Web em Projetos Freelancer"</h3>
+                            <h4>Projetos independente</h4>
+                            <p>
+                                Desenvolvimento de aplicações e sites sob demanda, atuando desde a criação de interfaces
+                                até integração com backend e banco de dados. Experiência prática com levantamento de
+                                requisitos,
+                                organização de código, ajustes conforme feedback e entrega de soluções funcionais.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contatos -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="contact-wrapper glass-card">
+                    <div class="contact-info">
+                        <h2 class="section-title">Vamos <span class="text-gradiente">Conversar?</span></h2>
+                        <p>Estou disponível para novos projetos e oportunidades freelancer. Entre em contato!</p>
+
+                        <div class="info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>Ryanrogerrodrigues@gmail.com</span>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Rio de Janeiro, Brasil</span>
+                        </div>
+
+                        <div class="social-links-big">
+                            <a href="#" class="social-btn"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="#" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" class="social-btn"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-actions">
+                        <h3 class="action-title">Canal Diretos</h3>
+                        <div class="action-grid">
+                            <a href="https://wa.me/+5521966350386" target="_blank" class="action-card whatsapp">
+                                <div class="icon-box">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+                                <div class="action-text">
+                                    <h4>WhatsApp</h4>
+                                    <span>Mande um "Olá"</span>
+                                </div>
+                                <i class="fa-solid fa-arrow-right action-arrow"></i>
+                            </a>
+
+                            <a href="https://github.com/ProgramadoRyan" target="_blank" class="action-card github">
+                                <div class="icon-box">
+                                    <i class="fa-brands fa-github"></i>
+                                </div>
+                                <div class="action-text">
+                                    <h4>GitHub</h4>
+                                    <span>Veja meus códigos</span>
+                                </div>
+                                <i class="fa-solid fa-arrow-right action-arrow"></i>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/ryan-roger/" target="_blank"
+                                class="action-card linkedin">
+                                <div class="icon-box">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </div>
+                                <div class="action-text">
+                                    <h4>LinkedIn</h4>
+                                    <span>Vamos conectar</span>
+                                </div>
+                                <i class="fa-solid fa-arrow-right action-arrow"></i>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/ryan-roger/" target="_blank"
+                                class="action-card Instagram">
+                                <div class="icon-box">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                                <div class="action-text">
+                                    <h4>Instagram</h4>
+                                    <span>Siga meu dia-a-dia</span>
+                                </div>
+                                <i class="fa-solid fa-arrow-right action-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Dev.Ryan. Todos os direitos reservados.</p>
+            <p><i class="fa-solid fa-heart accent"></i></p>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="/Script/script.js" defer></script>
+
+</body>
+
+</html>
